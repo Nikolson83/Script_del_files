@@ -27,6 +27,7 @@ def root_script():
     start_time = time.asctime()
 
     for total_delete in folders:
+        print(total_delete)
         delete_old_files(total_delete)
         delete_empty_folders(total_delete)
 
