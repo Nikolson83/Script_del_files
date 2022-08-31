@@ -39,7 +39,7 @@ def root_script():
 
 
 if __name__ == '__main__':
-    file_time = 15  # Сколько дней оставить.
+    time_new = 15  # Сколько дней оставить.
     # folders = [r'D:\Arhive_All' r'\1C\BUH', r'D:\Arhive_All' r'\1C\OK']  # Папки в которых проверять файлы.
     folders = [r'C:\Python_and_Django\Test_del_files\Alex', r'C:\Python_and_Django\Test_del_files\Yurii']  # Папки в которых проверять файлы.
 
@@ -47,6 +47,6 @@ if __name__ == '__main__':
     total_delete_folder = 0  # Количество удалённых папок.
 
     now_time = time.time()  # Определяем текущую дату.
-    age_time = now_time - 60*60*24*file_time  # Вычисляем дату с которой надо удалять файлы.
+    age_time = now_time - 60*60*24*time_new  # Вычисляем дату с которой надо удалять файлы.
 
     root_script()
