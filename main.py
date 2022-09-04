@@ -49,4 +49,4 @@ if __name__ == '__main__':
     now_time = time.time()  # Определяем текущую дату.
     age_time = now_time - 60*60*24*time_new  # Вычисляем дату с которой надо удалять файлы.
 
-    root_script()
+    # root_script()
