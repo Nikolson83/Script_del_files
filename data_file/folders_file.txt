@@ -1,4 +1,5 @@
 # Удаление файлов старше 15 дней.
 # Указывается каталог в котором производить проверку.
+C:\Python_and_Django\Test_del_files\1C
 C:\Python_and_Django\Test_del_files\Alex
 C:\Python_and_Django\Test_del_files\Yurii

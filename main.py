@@ -39,10 +39,10 @@ def root_script():
 
 
 if __name__ == '__main__':
-    time_new = 15  # Сколько дней оставить.
+    time_new = 18  # Сколько дней оставить.
 
     open_folders = os.path.join('data_file', 'folders_file.txt')  # Путь и имя файла
-    with open (open_folders) as folders:  # Менеджеры контекста блокирования и разблокирования ресурсов, автоматического закрытия файлов.
+    with open(open_folders, 'r') as folders:  # Менеджеры контекста блокирования и разблокирования ресурсов, автоматического закрытия файлов.
         folders_list = [line.rstrip() for line in folders
                         if line != '/n' and not line.startswith('#')]  # Считать строки и исключить перенос строки и символа \
         # rstrip() также удаляет любой пробел в конце строки и /n
@@ -53,4 +53,4 @@ if __name__ == '__main__':
     now_time = time.time()  # Определяем текущую дату.
     age_time = now_time - 60*60*24*time_new  # Вычисляем дату с которой надо удалять файлы.
 
-    root_script()
+    # root_script()
